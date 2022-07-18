@@ -9,7 +9,7 @@ CREAR UN ARCHIVO src/main/resources/beans.xml
     </bean>
     
     <bean id="gestorFacturas" class="com.example.GestorFacturas">
-        <constructor-arg name="calculadora" ref="calculadora" />
-        <constructor-arg name="nombre" value="Facturator 3000" />
+        <constructor-arg name="calculadora" ref="calculadora" />   ---> Argumento de constructor  name = "nombre de la variable" ref = "nombre para referir"
+        <constructor-arg name="nombre" value="Facturator 3000" /> ---> Argumento de contructor name = "nombre de la variable"   value = "nombre para referir"
 
     </bean>
