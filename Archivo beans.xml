@@ -3,7 +3,7 @@ Paginas importantes
 https://mvnrepository.com/
 https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-metadata
 
-CREAR UN ARCHIVO src/main/resources/beans.xml
+---------------------------CREAR UN ARCHIVO src/main/resources/beans.xml------------------------------------------------------
 
   <bean id="calculadora" class="com.example.Calculadora" scope="prototype">
     </bean>
@@ -13,3 +13,26 @@ CREAR UN ARCHIVO src/main/resources/beans.xml
         <constructor-arg name="nombre" value="Facturator 3000" /> ---> Argumento de contructor name = "nombre de la variable"   value = "nombre para referir"
 
     </bean>
+
+
+
+
+-----------------------------------------CLASE ----------------------------------------
+
+package com.example;
+
+public class GestorFacturas {
+
+    // 1. atributos
+    Calculadora calculadora;
+    String nombre;
+
+    //2. constructores
+    public GestorFacturas(Calculadora calculadora, String nombre){
+        System.out.println("Ejecutando constructor GestorFacturas");
+        this.calculadora = calculadora;
+        this.nombre = nombre;
+    }
+
+    // 3. metodos....
+}
