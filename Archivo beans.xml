@@ -5,8 +5,19 @@ https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#be
 
 ---------------------------CREAR UN ARCHIVO src/main/resources/beans.xml------------------------------------------------------
 
-  <bean id="calculadora" class="com.example.Calculadora" scope="prototype">
-    </bean>
+  <bean id="calculadora" class="com.example.Calculadora" scope="prototype">  ---> prototype = Se crearan varios objetos 
+                                                                                          Por lo general se utiliza en 
+                                                                                          Clases de operadores 
+                                                                                          Se ejecutara varias veces un contructor 
+                                                                                    
+                                                                             ---> singleton = Se reutilizara el mismo objeto
+                                                                                          Por lo general se utilizan en 
+                                                                                         Clases Servicios
+                                                                                         Clases Controladores
+                                                                                         Clases DAO
+                                                                                              Se ejecutara 1 vez un contructor 
+
+    </bean> 
     
     <bean id="gestorFacturas" class="com.example.GestorFacturas">
         <constructor-arg name="calculadora" ref="calculadora" />   ---> Argumento de constructor  name = "nombre de la variable" ref = "nombre para referir"
