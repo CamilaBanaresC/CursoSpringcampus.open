@@ -1,0 +1,15 @@
+Paginas importantes 
+
+https://mvnrepository.com/
+https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-metadata
+
+CREAR UN ARCHIVO src/main/resources/beans.xml
+
+  <bean id="calculadora" class="com.example.Calculadora" scope="prototype">
+    </bean>
+    
+    <bean id="gestorFacturas" class="com.example.GestorFacturas">
+        <constructor-arg name="calculadora" ref="calculadora" />
+        <constructor-arg name="nombre" value="Facturator 3000" />
+
+    </bean>
