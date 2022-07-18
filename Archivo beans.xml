@@ -10,7 +10,7 @@ https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#be
     
     <bean id="gestorFacturas" class="com.example.GestorFacturas">
         <constructor-arg name="calculadora" ref="calculadora" />   ---> Argumento de constructor  name = "nombre de la variable" ref = "nombre para referir"
-        <constructor-arg name="nombre" value="Facturator 3000" /> ---> Argumento de contructor name = "nombre de la variable"   value = "nombre para referir"
+        <constructor-arg name="nombre" value="Facturator 3000" /> ---> Argumento de contructor name = "nombre de la variable"   value = "nombre para variable" , Aqui tambien se puede llamar a la bbdd
 
     </bean>
 
