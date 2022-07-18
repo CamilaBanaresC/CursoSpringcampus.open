@@ -1,4 +1,8 @@
 # CursoSpringcampus.open
+https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-annotation-config
+
+
+
 
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -11,3 +15,18 @@
 
 
 </beans>
+
+
+Ahora sera necesario agregar la referencia 
+@component  a las clases que queremos que sean detectadas. 
+
+@Component
+public class Calculadora {
+
+    public Calculadora(){
+        System.out.println("Ejecutando constructor CalculatorService");
+    }
+    public String holaMundo(){
+        return "Hola mundo!";
+    }
+}
