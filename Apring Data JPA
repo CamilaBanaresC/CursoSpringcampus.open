@@ -1,0 +1,10 @@
+
+Spring DATA JPA  --Dependencia que nos sirve para guardar datos en BBDD
+*JPA
+  * Hibernate -- > traduce el java a SQL 
+    * JDBC 
+    
+H2-Database  ---> Base de datos incrustada    
+    
+ 
+  
