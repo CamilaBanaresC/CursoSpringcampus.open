@@ -32,8 +32,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>  <!-- test -->      
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
-
+	</dependencies
+		
+		
+		
+		
+		
+		Spring- web PAra crear controladores restFull --> Clases de JAVA 
+					controladores de tipo MVC
+	
+		Spring Boot DevTools nos proporciona una mejor experiencia de desarrolo, se guardara automaticamente
 	<build>
 		<plugins>
 			<plugin>
